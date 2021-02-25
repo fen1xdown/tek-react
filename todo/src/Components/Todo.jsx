@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 function Todo(props) {
+
     return (
-        <div>
-            {props.item}
+        <div className="list">
+            <p id={props} className="item">
+                {props.item}
+            </p>
         </div>
     )
-}
+};
 
 export default Todo;
 
